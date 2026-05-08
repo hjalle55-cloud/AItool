@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Buddy AI - Din smarta resekompis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- BAKGRUNDS-FORMER -->
+  <div class="hero-bg-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Huvudnavigation">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="Travel Buddy AI startsida">
+        <div class="logo-icon">TB</div>
+        <span class="logo-text">Travel Buddy <em>AI</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">Hur det fungerar</a></li>
+        <li><a href="#features">Funktioner</a></li>
+        <li><a href="#how-to-use">Kom igang</a></li>
+        <li><a href="#cta" class="nav-cta">Prova gratis</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduktion">
+    <div class="hero-content">
+      <div class="hero-badge">AI-driven reseplanering</div>
+      <h1 class="hero-title">
+        Din smartaste<br />
+        <span class="accent-text">resekompis</span><br />
+        väntar
+      </h1>
+      <p class="hero-sub">
+        Travel Buddy AI planerar hela din resa - från flyg och hotell till dolda
+        restaurangtips och lokala upplevelser. Beskriv din drömresa och låt AI:n sköta resten.
+      </p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn-primary">Starta din resa</a>
+        <a href="#how-it-works" class="btn-secondary">Se hur det fungerar</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">120+</span>
+          <span class="stat-label">Lander tackta</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">50k</span>
+          <span class="stat-label">Noejda resenaerer</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">4.9</span>
+          <span class="stat-label">Medelbetyg</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAT-PREVIEW KORT -->
+    <div class="hero-visual">
+      <div class="chat-card" role="img" aria-label="Exempel pa AI-konversation">
+        <div class="chat-header">
+          <div class="chat-avatar">AI</div>
+          <div>
+            <div class="chat-name">Travel Buddy AI</div>
+            <div class="chat-status">Online och redo att hjalpa</div>
+          </div>
+        </div>
+        <div class="chat-body">
+          <div class="chat-bubble user">
+            Jag vill resa till Japan i april, budget 25 000 kr
+          </div>
+          <div class="chat-bubble ai">
+            Perfekt! April ar ocksa körsbarsblomstretid i Japan. Jag rekommenderar Tokyo, Kyoto och Osaka pa 14 dagar. Vill du att jag tar fram ett fullstandigt reseschema?
+          </div>
+          <div class="chat-bubble user">
+            Ja tack! Inkludera lokala matupplevelser
+          </div>
+          <div class="chat-typing" aria-label="Travel Buddy AI skriver...">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-tag tag-1">Tokyo - 14 apr</div>
+      <div class="floating-tag tag-2">Budget: OK</div>
+      <div class="floating-tag tag-3">Ryokan bokt!</div>
+    </div>
+  </section>
+
+  <!-- HUR DET FUNGERAR -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="section-inner">
+      <div class="section-label">Process</div>
+      <h2 class="section-title">Hur Travel Buddy AI fungerar</h2>
+      <p class="section-sub">
+        Var avancerade AI-modell kombinerar realtidsdata, miljontals reseomdomen
+        och djup destinations-kunskap for att skapa perfekt personaliserade reseplaner.
+      </p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="#D6EDF7"/>
+              <path d="M16 24h16M24 16v16" stroke="#2C6E8A" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="10" stroke="#2C6E8A" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Du beskriver din drom</h3>
+          <p>Berätta vart du vill åka, hur länge, vilken budget du har och vad du gillar att göra. Ju mer du berättar, desto bättre blir planen.</p>
+        </div>
+        <div class="step-card featured">
+          <div class="step-num">02</div>
+          <div class="step-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="rgba(255,255,255,0.15)"/>
+              <circle cx="24" cy="20" r="7" stroke="white" stroke-width="2"/>
+              <path d="M14 36c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M30 14l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>AI:n analyserar och planerar</h3>
+          <p>Modellen bearbetar din forespagan mot realtidsdata - priser, vader, lokala events och recensioner - for att bygga den optimala resplanen.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="#FDF3DC"/>
+              <path d="M16 16h16v16H16z" stroke="#E8B86D" stroke-width="2" rx="2"/>
+              <path d="M20 24l3 3 6-6" stroke="#E8B86D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Du far din kompletta reseplan</h3>
+          <p>Få ett dag-för-dag schema med bokningslänkar, packlista, lokala fraser och insider-tips - allt samlat på ett ställe.</p>
+        </div>
+      </div>
+
+      <!-- AI PIPELINE -->
+      <div class="pipeline" aria-label="AI-modellens dataflode">
+        <div class="pipe-node">Din forfragan</div>
+        <div class="pipe-arrow">-&gt;</div>
+        <div class="pipe-node highlight">NLP-analys</div>
+        <div class="pipe-arrow">-&gt;</div>
+        <div class="pipe-node">Realtidsdata</div>
+        <div class="pipe-arrow">-&gt;</div>
+        <div class="pipe-node highlight">AI-modell</div>
+        <div class="pipe-arrow">-&gt;</div>
+        <div class="pipe-node">Personalisering</div>
+        <div class="pipe-arrow">-&gt;</div>
+        <div class="pipe-node highlight">Din reseplan</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNKTIONER -->
+  <section id="features" class="features">
+    <div class="section-inner">
+      <div class="section-label">Funktioner</div>
+      <h2 class="section-title">Allt du behover for den perfekta resan</h2>
+      <p class="section-sub">
+        Travel Buddy AI ar mer an en reseplanerare - det ar en komplett resekompis
+        som hjalper dig fran forsta idén till hemkomst.
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card large">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" fill="#D6EDF7"/>
+              <path d="M24 14v10l6 3" stroke="#2C6E8A" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="10" stroke="#2C6E8A" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Realtids reseplanering</h3>
+          <p>AI:n hämtar aktuella priser, tillgänglighet och väderdata direkt när du planerar. Inga gamla förslag - alltid uppdaterat och relevant för exakt ditt resdatum och din budget.</p>
+          <span class="feature-tag">Live data</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="#FDEAE5"/>
+              <path d="M24 12c-6.627 0-12 5.373-12 12 0 8 12 16 12 16s12-8 12-16c0-6.627-5.373-12-12-12z" stroke="#E8735A" stroke-width="2"/>
+              <circle cx="24" cy="24" r="4" fill="#E8735A"/>
+            </svg>
+          </div>
+          <h3>Smarta destinationsguider</h3>
+          <p>Djupgående lokalkännedom for 120+ lander - inklusive dolda gomar som inte syns pa vanliga resebloggar.</p>
+          <span class="feature-tag">120+ lander</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="#FDF3DC"/>
+              <path d="M14 20h20M14 28h12" stroke="#E8B86D" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="12" y="14" width="24" height="20" rx="4" stroke="#E8B86D" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Budget-optimering</h3>
+          <p>AI:n hittar alltid det bästa prisalternativet och optimerar din budget over hela resan.</p>
+          <span class="feature-tag">Spara pengar</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="#D6EDF7"/>
+              <path d="M18 24h12M24 18l6 6-6 6" stroke="#2C6E8A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Flersprakigt stod</h3>
+          <p>Kommunicera med AI:n pa svenska, engelska eller 30+ andra sprak. Far ocksa lokala fraser for din destination.</p>
+          <span class="feature-tag">30+ sprak</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="#FDEAE5"/>
+              <path d="M24 12l3.09 6.26L34 19.27l-5 4.87 1.18 6.86L24 28l-6.18 3.24L19 24.14l-5-4.87 6.91-1.01L24 12z" stroke="#E8735A" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Personliga rekommendationer</h3>
+          <p>Ju mer du reser med Travel Buddy AI, desto battre lär AI:n kanna din smak och dina preferenser.</p>
+          <span class="feature-tag">Smart larning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HUR MAN ANVANDER -->
+  <section id="how-to-use" class="how-to-use">
+    <div class="section-inner">
+      <div class="section-label">Guide</div>
+      <h2 class="section-title">Sa har anvander du Travel Buddy AI</h2>
+      <p class="section-sub">
+        Kom igång på under en minut. Inga konton krävs för att testa - börja chatta direkt.
+      </p>
+
+      <div class="use-steps">
+        <div class="use-step">
+          <div class="use-step-left">
+            <div class="use-step-num">1</div>
+            <div class="use-step-line"></div>
+          </div>
+          <div class="use-step-content">
+            <h3>Beskriv din dromresa</h3>
+            <p>Skriv vart du vill resa, nar, hur lange och med vem. Du kan vara sa detaljerad eller overordnad du vill - AI:n staller foljefragar om den behover mer information.</p>
+            <div class="code-example">
+              <span class="code-prompt">Du:</span>
+              Jag vill ta med min familj (2 vuxna, 2 barn 8 och 11 ar) till Thailand i juli. Budget ca 60 000 kr. Vi alskar strand och mat men barnen vill ocksa ha aventyr.
+            </div>
+          </div>
+        </div>
+
+        <div class="use-step">
+          <div class="use-step-left">
+            <div class="use-step-num">2</div>
+            <div class="use-step-line"></div>
+          </div>
+          <div class="use-step-content">
+            <h3>Granska och finslipa din plan</h3>
+            <p>AI:n presenterar ett fullstandigt forslag. Du kan justera vad som helst - byta hotell, lagga till aktiviteter eller andra resvaegen - allt genom naturligt samtal.</p>
+            <div class="use-tip">
+              Tips: Saga "Visa billigare hotellalternativ pa Koh Samui" eller "Byt ut dag 3 mot ett besok till elefantreservat" sa anpassar AI:n planen direkt.
+            </div>
+          </div>
+        </div>
+
+        <div class="use-step">
+          <div class="use-step-left">
+            <div class="use-step-num">3</div>
+            <div class="use-step-line"></div>
+          </div>
+          <div class="use-step-content">
+            <h3>Exportera och boka</h3>
+            <p>Exportera din fardiga reseplan som PDF, dela den med resasallskapet och klicka direkt pa bokningslankarna. AI:n foljer med under hela resan om du behover hjalp.</p>
+            <div class="use-tip">
+              Tips: Aktivera "Resesallskapslage" sa kan alla i din grupp chatta med AI:n och se samma reseplan i realtid.
+            </div>
+          </div>
+        </div>
+
+        <div class="use-step">
+          <div class="use-step-left">
+            <div class="use-step-num">4</div>
+          </div>
+          <div class="use-step-content">
+            <h3>AI-stod under hela resan</h3>
+            <p>Travel Buddy AI ar tillganglig 24/7 under din resa. Fa hjalp med oversattningar, hitta narmaste lakemedelsaffar, fa restaurangrekommendationer i realtid eller omplanera om nagot andras.</p>
+            <div class="use-tip">
+              Tips: Spara AI:n offline-laget innan du aker - da fungerar den aven utan internet pa de mest avlagsna destinationerna.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <div class="section-inner">
+      <div class="section-label">Omdomen</div>
+      <h2 class="section-title">Vad vara resenaerer sager</h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card featured-testimonial">
+          <div class="testimonial-stars">* * * * *</div>
+          <p>"Travel Buddy AI planerade var Japan-resa pa 20 minuter. Det hade tagit oss veckor sjalva. Vi hittade restauranger och upplevelser vi aldrig hade hittat pa egenhand."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ML</div>
+            <div>
+              <div class="author-name">Maria Lindqvist</div>
+              <div class="author-trip">Japan, 3 veckor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">* * * * *</div>
+          <p>"Som soloresenaer kandes det tryggare att ha AI:n med mig. Den hittade perfekta hostels, lokala matmarknader och hjalper till med oversattningar pa plats."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JK</div>
+            <div>
+              <div class="author-name">Jonas Karlsson</div>
+              <div class="author-trip">Vietnam, 6 veckor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">* * * * *</div>
+          <p>"Vi sparade nastan 8 000 kr pa var Marocko-resa tack vare AI:ns budgetoptimering. Den hittade alternativa flygkombinationer vi aldrig hade tankt pa."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SE</div>
+            <div>
+              <div class="author-name">Sara Eriksson</div>
+              <div class="author-trip">Marocko, 10 dagar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="cta-section">
+    <div class="cta-shapes" aria-hidden="true">
+      <div class="cta-shape-1"></div>
+      <div class="cta-shape-2"></div>
+    </div>
+    <div class="cta-inner">
+      <div class="section-label light">Kom igang</div>
+      <h2 class="cta-title">Var ska din nasta aventyr ta dig?</h2>
+      <p class="cta-sub">
+        Skriv in din drömresa nedan och lat Travel Buddy AI bygga din perfekta reseplan pa sekunder - helt gratis.
+      </p>
+      <div class="cta-input-row">
+        <input
+          type="text"
+          class="cta-input"
+          placeholder="T.ex. 2 veckor i Peru i oktober, budget 30 000 kr..."
+          aria-label="Beskriv din dromresa"
+        />
+        <button class="cta-btn" type="button">Planera min resa</button>
+      </div>
+      <p class="cta-note">Inget konto kravs. Gratis att prova. Ingen kreditkortsinformation.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <a href="#" class="logo" aria-label="Travel Buddy AI startsida">
+        <div class="logo-icon">TB</div>
+        <span class="logo-text">Travel Buddy <em>AI</em></span>
+      </a>
+      <nav class="footer-links" aria-label="Fotnavigation">
+        <a href="#how-it-works">Hur det fungerar</a>
+        <a href="#features">Funktioner</a>
+        <a href="#how-to-use">Guide</a>
+        <a href="#">Integritetspolicy</a>
+        <a href="#">Kontakt</a>
+      </nav>
+      <p class="footer-copy">2025 Travel Buddy AI. Alla rattigheter forbehallna.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
